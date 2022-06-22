@@ -1,8 +1,8 @@
 /**
-* Template Name: BizLand - v3.6.0
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: Education - v1.0.0
+* Template URL: #
+* Author: Kien Dang
+* License: Free
 */
 (function() {
   "use strict";
@@ -80,7 +80,7 @@
 
   /**
    * Header fixed top on scroll
-   */
+   
   let selectHeader = select('#header')
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop
@@ -96,7 +96,7 @@
     }
     window.addEventListener('load', headerFixed)
     onscroll(document, headerFixed)
-  }
+  }*/
 
   /**
    * Back to top button
@@ -171,6 +171,29 @@
       preloader.remove()
     });
   }
+
+  /**
+   * Hero Slider
+   */
+   var swiper = new Swiper(".sliderFeaturedPosts", {
+    spaceBetween: 0,
+    speed: 500,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".custom-swiper-button-next",
+      prevEl: ".custom-swiper-button-prev",
+    },
+  });
 
   /**
    * Initiate glightbox
