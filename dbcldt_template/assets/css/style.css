@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #106eea;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3b8af2;
+  color: #0d6efd;
   text-decoration: none;
 }
 
@@ -204,6 +204,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-container {
   background-color: #fbfbfb;  
   height: 60px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
 }
 
 .navbar {
@@ -700,6 +702,7 @@ section {
 .annoucement-actions-plan ul li a {
   color: #000000;
   display: block;
+  transition: 0.3s;
 }
 
 .annoucement-actions-plan ul li a:hover {
@@ -730,13 +733,21 @@ section {
 .view-result a img {
   max-width: 100%;
   height: auto;
+  transition: 0.3s;
+}
+
+.view-result a:hover img {
+  transform: scale(1.1);
+  
 }
 
 /*--------------------------------------------------------------
 # Posts & Forms
 --------------------------------------------------------------*/
 .recent-posts {
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #efefef;
 }
 
 .first-post img {
@@ -764,6 +775,7 @@ section {
   text-transform: uppercase;
   font-weight: 600;  
   color: rgba(0, 0, 0, 0.4);  
+  margin-bottom: 15px;
 }
 
 .recent-post-item a {
@@ -772,9 +784,14 @@ section {
   transition: 0.3s;
 }
 
+.recent-post-item a:hover { 
+  color: #0d6efd;
+}
+
 .recent-post-item h4 {
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 15px;
+  font-weight: normal;
 }
 
 .recent-post-item img {
@@ -810,6 +827,11 @@ section {
   display: block;
   color: #000000;  
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.recent-forms a:hover {
+  color: #0d6efd
 }
 
 .recent-forms p {
@@ -864,6 +886,10 @@ section {
 
 .featured-gallery .item-box:hover .item-img img {
   transform: rotate(6deg) scale(1.2);
+}
+
+.featured-gallery .item-box:hover .item-title {
+  color: #0d6efd
 }
 
 /*--------------------------------------------------------------
@@ -996,3 +1022,89 @@ section {
     padding: 2px 0;
   }
 }
+
+/*----------------------------------------------------------------------------
+# Read more link 
+------------------------------------------------------------------------------*/
+.read-more {
+  color: #0d6efd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px 20px 0;
+}
+
+.read-more i {
+  line-height: 0;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/*----------------------------------------------------------------------------
+# Post page 
+------------------------------------------------------------------------------*/
+.entry {
+  display: flex;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.entry img {
+  width: 30%;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.entry h4 {
+  font-size: 16px;
+}
+
+.entry h4 a {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.entry h4 a:hover {
+  color: #0d6efd
+}
+
+.entry p {
+  font-size: 15px;
+}
+
+.post .post-pagination {
+  color: #0d6efd;
+  margin-top: 40px;
+}
+
+.post .post-pagination ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.post .post-pagination li {
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.post .post-pagination li a {
+  color: #012970;
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post .post-pagination li.active, .post .post-pagination li:hover {
+  background: #0d6efd;
+}
+.post .post-pagination li.active a, .post .post-pagination li:hover a {
+  color: #fff;
+}
+
