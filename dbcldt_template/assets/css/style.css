@@ -593,7 +593,6 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #f1f6fe;
   min-height: 40px;
 }
 .breadcrumbs h2 {
@@ -614,6 +613,15 @@ section {
   margin: 0;
   font-size: 14px;
 }
+
+.breadcrumbs ol li a {
+  color: #0d6efd;
+}
+
+.breadcrumbs ol li a:hover {
+  color: rgba(13, 110, 253, 0.8);
+}
+
 .breadcrumbs ol li + li {
   padding-left: 10px;
 }
@@ -1036,6 +1044,10 @@ section {
   padding: 8px 20px 20px 0;
 }
 
+.read-more:hover {
+  color: rgba(13, 110, 253, 0.85);
+}
+
 .read-more i {
   line-height: 0;
     margin-left: 5px;
@@ -1045,32 +1057,40 @@ section {
 /*----------------------------------------------------------------------------
 # Post page 
 ------------------------------------------------------------------------------*/
-.entry {
-  display: flex;
-  align-items: start;
-  margin-bottom: 15px;
+.post {
+  padding-top: 30px
 }
 
-.entry img {
+.post .entries {
+  margin-bottom: 30px;
+}
+
+.post .entry {
+  display: flex;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.post .entry img {
   width: 30%;
   margin-right: 30px;
   border-radius: 5px;
 }
 
-.entry h4 {
+.post .entry h4 {
   font-size: 16px;
 }
 
-.entry h4 a {
+.post .entry h4 a {
   color: #000000;
   transition: 0.3s;
 }
 
-.entry h4 a:hover {
+.post .entry h4 a:hover {
   color: #0d6efd
 }
 
-.entry p {
+.post .entry p {
   font-size: 15px;
 }
 
@@ -1084,10 +1104,6 @@ section {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.justify-content-center {
-  justify-content: center!important;
 }
 
 .post .post-pagination li {
@@ -1106,5 +1122,92 @@ section {
 }
 .post .post-pagination li.active a, .post .post-pagination li:hover a {
   color: #fff;
+}
+
+.sidebar .heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.sidebar .top-recent-annoucement ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .top-recent-annoucement ul li {
+  padding-bottom: 10px;
+}
+
+.sidebar .top-recent-annoucement ul li a {
+  display: block;
+}
+
+.sidebar .top-recent-annoucement ul li span {
+  color: #aaaaaa;
+  font-style: italic;
+  display: flex;
+  justify-content: right;
+  font-size: 12px;
+}
+
+.sidebar .exam-result {
+  margin-top: 30px;
+}
+
+.sidebar .exam-result img {
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar .exam-result a:hover img {
+  transform: scale(1.1);
+}
+
+.sidebar .top-recent-post {
+  margin-top: 30px
+}
+
+.sidebar .top-recent-post ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.sidebar .top-recent-post ul li {  
+  padding-bottom: 30px;
+}
+
+.sidebar .top-recent-post ul li a {
+  display: flex;
+  font-weight: 500;
+}
+
+.sidebar .top-recent-post ul li img {
+  width: 100px;
+  height: auto;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------
+# Staff Page
+---------------------------------------------------------------------------*/
+.staff {
+  padding-top: 30px;
+}
+
+.staff .staff-row{
+  margin-bottom: 40px
+}
+
+.staff .staff-box .staff-info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.staff .staff-box .staff-info p {
+  color: rgba(0, 0, 0, 0.7)
 }
 
