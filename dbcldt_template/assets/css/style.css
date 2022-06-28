@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -315,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  padding-left: 15px;
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -1198,7 +1205,7 @@ section {
   padding-top: 30px;
 }
 
-.staff .staff-row{
+.staff .staff-row {
   margin-bottom: 40px
 }
 
@@ -1207,13 +1214,115 @@ section {
   padding-top: 20px;
 }
 
+.staff .staff-box .staff-info h5 {
+  font-size: 18px;
+}
+
 .staff .staff-box .staff-info p {
-  color: rgba(0, 0, 0, 0.7)
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------------------
 # Single Staff Page
 ---------------------------------------------------------------------------*/
 .single-staff {
+  padding-top: 30px;
+}
+
+.single-staff .divider {
+  border-top: 1px solid #efefef;
+  margin: 20px 0;
+}
+
+.single-staff .detail-info img {
+  margin-bottom: 20px;
+}
+
+.single-staff .detail-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.single-staff .detail-info ul li {
+  display: flex;
+  padding: 10px 0
+}
+
+.single-staff .detail-info ul li i {
+  margin-right: 15px;  
+}
+
+.single-staff .detail-info .leading-text {
+  width: 100px
+}
+
+.single-staff .staff-others h4 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+
+.single-staff .staff-others ul li a {
+  display: flex;
+  padding-bottom: 30px
+}
+
+.single-staff .staff-others ul li img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.single-staff .staff-others ul li h5 {
+  font-size: 16px;
+}
+
+
+/*--------------------------------------------------------------------------
+# Contact Page
+---------------------------------------------------------------------------*/
+.contact {
+  padding-top: 30px;
+}
+
+.contact .contact-info .textbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact .contact-info .textbox i {
+  background-color: #ECF3FF;  
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;  
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.contact .contact-info .textbox h5 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.contact .contact-info ul li {
+  padding-bottom: 15px;
+}
+
+.contact .contact-info ul li p, .contact .contact-info ul li a {
+  padding-left: 60px;
+  
+}
+
+.contact .contact-info small {
+  font-size: 14px
+}
+
+.contact .contact-info .map {
   padding-top: 30px;
 }
