@@ -124,47 +124,172 @@
             <li>
               <a href="index.html">Trang chủ</a>
             </li>
-            <li>Giới thiệu - Liên hệ</li>
-          </ol>        
+            <li><a href="#">Đề thi - Kết quả phúc khảo</a></li>
+            <li>Tra cứu kết quả phúc khảo</li>
+          </ol>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="qa-exam-container" class="post">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="icon-box contact-info">
-              <ul>
-                <li>
-                  <div class="textbox">
-                    <i class="bi bi-geo-alt"></i>
-                    <h5>Địa chỉ</h5>
-                  </div>                  
-                  <p>Tòa nhà H, Tầng 2, Phòng 205 - Số 763 Phạm Hữu Lầu, P.6, Tp.Cao Lãnh, Đồng Tháp</p>
-                </li>
-                <li>
-                  <div class="textbox">
-                    <i class="bi bi-telephone"></i>
-                  <h6>Điện thoại</h6>
+          <div class="col-lg-8">
+              <div class="icon-box">
+                <h4 class="mb-5 text-center">TRA CỨU KẾT QUẢ PHÚC KHẢO</h4>
+                <form>
+                  <div class="form-group mb-3">
+                    <label for="studentID"><strong>Mã số sinh viên</strong></label>
+                    <input type="text" class="form-control mt-3" id="studentID" placeholder="">
                   </div>
-                  <p>Tòa nhà H1, Tầng 2, Phòng 205 - Số 763 Phạm Hữu Lầu, P.6, Tp.Cao Lãnh, Đồng Tháp</p>
-                </li>
-                <li>
-                  <div class="textbox">
-                    <i class="bi bi-envelope"></i>
-                    <h6>Email</h6>
-                  </div>
-                  <a href="mailto:pdbcldt.dthu@dthu.edu.vn">pdbcldt.dthu@dthu.edu.vn</a>
-                </li>
-              </ul>
 
-              <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0233062090447!2d105.64229225425379!3d10.419723496387935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a64d83b2792df%3A0x17bca5e601420f5a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyDEkOG7k25nIFRow6Fw!5e0!3m2!1svi!2s!4v1656433926080!5m2!1svi!2s" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                      <label for="schoolYear"><strong>Năm học</strong></label>
+                      <select class="form-control mt-3" id="schoolYear">
+                        <option>2019-2020</option>
+                        <option>2020-2021</option>
+                        <option>2021-2022</option>                       
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">    
+                      <label for="semester"><strong>Học kỳ</strong></label>                  
+                      <select class="form-control mt-3" id="semester">
+                        <option>1</option>
+                        <option>2</option>                      
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <button type="button" class="btn btn-primary text-uppercase mb-5 mt-3"><i class="bi bi-search"></i> Tra cứu kết quả</button>
+                </form> 
+                
+                <!--- Result -->
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">STT</th>
+                      <th scope="col">Họ và tên</th>
+                      <th scope="col">Lớp</th>
+                      <th scope="col">SV thuộc khoa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>              
+          </div>
+          <div class="col-lg-4">
+            <div id="sidebar" class="sidebar">
+              <!-- Top 5 recent announcements -->
+              <div class="icon-box top-recent-annoucement">
+                <h4 class="heading">Thông báo</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </a>
+                    <span>22-06-2022 15:30:13</span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </a>
+                    <span>22-06-2022 15:30:13</span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </a>
+                    <span>22-06-2022 15:30:13</span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </a>
+                    <span>22-06-2022 15:30:13</span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </a>
+                    <span>22-06-2022 15:30:13</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Links -->
+              <div class="icon-box exam-result">
+                <a href="#" class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/clients/client-2.png" class="img-fluid">
+                </a>  
+              </div>
+              <div class="icon-box exam-result">
+                <a href="#" class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/clients/client-3.png" class="img-fluid">
+                </a>  
+              </div>
+
+              <!-- top recent posts -->
+              <div class="icon-box top-recent-post">
+                <h4 class="heading">Tin đọc nhiều</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <img src="assets/img/post/blog-3.jpg">
+                    </a>                    
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <img src="assets/img/post/blog-3.jpg">
+                    </a>                    
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <img src="assets/img/post/blog-3.jpg">
+                    </a>                    
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <img src="assets/img/post/blog-3.jpg">
+                    </a>                    
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <img src="assets/img/post/blog-3.jpg">
+                    </a>                    
+                  </li>
+
+                </ul>
               </div>
 
             </div>
-
-            
           </div>
         </div>
       </div>

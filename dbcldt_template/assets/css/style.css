@@ -1424,3 +1424,36 @@ section {
   display: block;
   margin-bottom: 10px;
 }
+
+/*-----------------------------------------------------------
+# Single Gallery
+------------------------------------------------------------*/
+.single-gallery {
+  padding-top: 50px;
+}
+
+
+.single-gallery h5 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.single-gallery .gallery-item {
+  overflow: hidden;  
+  border-bottom: 20px solid #fff;
+}
+
+.single-gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+.single-gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*-----------------------------------------------------------
+# View Question/Answer Page
+------------------------------------------------------------*/
+#qa-exam-container .filter-box {
+  margin-bottom: 60px;
+
+}
